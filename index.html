@@ -475,41 +475,7 @@
 
 	window.onload = function() {
 
-
-
-		// var date = new Date();
-
-		// document.getElementById('yearNum').innerHTML = date.getFullYear();
-
-
-
-		//var httpRequest = new XMLHttpRequest();
-
-
-
-		//var code = ''
-
-		//if(window.location.href.indexOf("#") > -1){
-
-			//code = getHashString("sn");
-
-		//}else{
-
-			//code = getQueryString("sn");
-
-		//}
-
-
-
-		//if(!code){
-
-		//	return false;
-
-		//}
-
-
-
-			//把链接转换为二维码
+		//把链接转换为二维码
 
 		jQuery('.code').qrcode({
 
@@ -531,103 +497,7 @@
 
 		});
 
-
-
-	// 	httpRequest.open('GET', 'https://dequan.315cv.com/qrcode/build?text=' + code, true);
-
-	// 	httpRequest.send();
-
-
-
-	// 	httpRequest.onreadystatechange = function() {
-
-	// 		if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-
-	// 			var json = JSON.parse(httpRequest.responseText);
-
-	// 			document.getElementById('title').innerHTML=json.result.title
-
-	// 			document.getElementById('textNo').innerHTML=json.result.textNo
-
-	// 			document.getElementById('textNo1').innerHTML=json.result.textNo
-
-	// 			document.getElementById('custmerName').innerHTML=json.result.custmerName
-
-	// 			document.getElementById('enterTime').innerHTML=json.result.enterTime
-
-	// 			document.getElementById('reportNo').innerHTML=json.result.reportNo
-
-
-
-	// 			var accountants=json.result.accountants.split(",")
-
-	// 			var node,textnode
-
-	// 			for(var i=0;i<accountants.length;i++){
-
-	// 				node=document.createElement("span")
-
-	// 				node.className="conName"
-
-	// 				textnode=document.createTextNode(accountants[i]);
-
-	// 				node.appendChild(textnode);
-
-	// 				document.getElementById('accountants').appendChild(node);
-
-	// 			}
-
-	// 		}
-
-
-
-	// 		//var imgUrl="http://qr.topscan.com/api.php?text=http://ykcpa.top/www/?id="+json.result.id
-
-	// 		//document.getElementById("qrcode").src=imgUrl;
-
-
-
 	 }
-
-
-
-		function getQueryString(name) {
-
-			//debugger
-
-			var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-
-			var r = window.location.search.substr(1).match(reg);
-
-			if (r != null) {
-
-				return unescape(r[2]);
-
-			}
-
-			return null;
-
-		}
-
-
-
-		function getHashString(name) {
-
-			var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-
-			var r = window.location.hash.substr(3).match(reg);
-
-			if (r != null) {
-
-				return unescape(r[2]);
-
-			}
-
-			return null;
-
-		}
-
-}
 
 </script>
 
